@@ -1,0 +1,15 @@
+QUESTIONS:
+- The fetch request runs without CORS errors (or you demonstrate how an error looks).
+- Written explanation covers all three concepts listed above.
+- The demo file is self-contained and runnable from a local file system or simple server.
+
+Answer:
+The browser first sends out a request to the server, detailing the HTTP method the origin is requesting and 
+any custom headers the origin intends to send. Depending on the nature of the request, this may be sent directly 
+as a safe request, or preceded by an OPTIONS preflight request. If the cross-origin request is permitted, the server
+responds by explicitly granting the origin access. However, if a CORS error occurs, it typically means the server 
+did not include the necessary CORS headers in its response (or rejected the request). Because these security headers 
+are missing or misconfigured, the browser intercepts the response, blocks the data from reaching the application, and 
+throws a CORS security error preventing the frontend from reading the response.
+
+
