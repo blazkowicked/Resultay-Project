@@ -2,7 +2,7 @@
 # CURL commands for your API endpoints
 # Replace YOUR_PROJECT_URL with your actual Supabase URL
 
-PROJECT_URL="https://your-project.supabase.co/rest/v1"
+PROJECT_URL="https://iwsfzylwsxuovnkapylo.supabase.co/rest/v1/"
 
 # GET all projects
 curl -s "$PROJECT_URL/projects" -o /dev/null -w "GET /projects -> %{http_code}\n"

@@ -67,7 +67,7 @@ curl -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIs..." \
 
 **GET all projects:**
 ```bash
-curl https://your-project.supabase.co/rest/v1/projects
+curl https://iwsfzylwsxuovnkapylo.supabase.co/rest/v1/
 ```
 
 **GET single project by ID:**
@@ -81,14 +81,14 @@ curl -X POST \
   -H "Content-Type: application/json" \
   -H "apikey: YOUR_API_KEY" \
   -d '{"title":"Test Project","description":"Testing"}' \
-  https://your-project.supabase.co/rest/v1/projects
+  https://iwsfzylwsxuovnkapylo.supabase.co/rest/v1/
 ```
 
 **DELETE a project:**
 ```bash
 curl -X DELETE \
   -H "apikey: YOUR_API_KEY" \
-  https://your-project.supabase.co/rest/v1/projects?id=eq.UUID_HERE
+  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Iml3c2Z6eWx3c3h1b3Zua2FweWxvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODkyODEzMjYsImV4cCI6MjEwNDg1NzMyNn0.m_pCTNuXsi0pmMYXXTHOlhfX7lluMZdm_BZC9exrdmU
 ```
 
 ## Task
